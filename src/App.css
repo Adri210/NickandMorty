@@ -1,0 +1,44 @@
+.titulo{
+  display: flex; 
+  justify-content: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 500px 500px ;
+  justify-content: center;
+  padding: 5px;
+}
+
+.artigo{
+  background-color: rgb(35, 43, 40);
+  display: flex;
+  color: antiquewhite;
+  gap: 10px;
+  border-radius: 10px;
+ 
+}
+
+.artigo_dois{
+  padding: 10px;
+
+}
+
+.imagem{
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.subtitulo{
+  display: flex;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.especifico{
+  display: flex;
+  flex-direction: column;
+}
