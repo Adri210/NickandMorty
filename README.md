@@ -3,6 +3,11 @@
 
 Este é um projeto simples em React que exibe uma lista de personagens do popular desenho animado *Rick and Morty*. O site consome a API pública [Rick and Morty API](https://rickandmortyapi.com/) para buscar os dados dos personagens e permite que o usuário filtre esses personagens pelo nome em tempo real.
 
+![image](https://github.com/user-attachments/assets/532f9fe2-68d0-4daa-acda-4f5aad7afd66)
+![image](https://github.com/user-attachments/assets/a582ebea-d70a-494e-be42-069d25be3ecc)
+
+
+
 ## Funcionalidades
 
 - **Listagem de Personagens**: Exibe uma lista de personagens da série Rick and Morty.
