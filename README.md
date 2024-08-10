@@ -1,70 +1,92 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rick and Morty Characters
 
-## Available Scripts
+Este é um projeto simples em React que exibe uma lista de personagens do popular desenho animado *Rick and Morty*. O site consome a API pública [Rick and Morty API](https://rickandmortyapi.com/) para buscar os dados dos personagens e permite que o usuário filtre esses personagens pelo nome em tempo real.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Listagem de Personagens**: Exibe uma lista de personagens da série Rick and Morty.
+- **Pesquisa em Tempo Real**: Permite que o usuário filtre os personagens pelo nome usando uma barra de pesquisa.
+- **Tratamento de Erros**: Se ocorrer algum erro ao buscar os dados da API, uma mensagem de erro amigável é exibida na tela.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Como Usar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Pré-requisitos
 
-### `npm test`
+- Node.js instalado
+- NPM ou Yarn instalado
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Instalação
 
-### `npm run build`
+1. Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/seu-usuario/rick-and-morty-characters.git
+   cd rick-and-morty-characters
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instale as dependências:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+   ou
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   yarn install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Executando o Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Inicie o servidor de desenvolvimento:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+   ou
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   yarn start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Abra o navegador e acesse `http://localhost:3000` para ver o projeto em ação.
 
-### Code Splitting
+### Estrutura do Código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **`App.js`**: Componente principal que faz a requisição à API, armazena os dados dos personagens e gerencia o estado de pesquisa e erros.
+- **`index.css`** e **`App.css`**: Arquivos de estilo para personalizar a aparência do site.
 
-### Analyzing the Bundle Size
+### Explicação do Funcionamento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Busca de Personagens**: Ao carregar a página, o aplicativo faz uma requisição para a API de Rick and Morty e obtém uma lista de personagens. Esses personagens são armazenados em um estado React (`rick`).
+- **Filtragem de Personagens**: O usuário pode digitar na barra de pesquisa para filtrar os personagens exibidos na tela. O filtro é aplicado em tempo real enquanto o usuário digita.
+- **Tratamento de Erros**: Se ocorrer um erro durante a requisição à API (como problemas de rede ou uma URL inválida), uma mensagem de erro é exibida na interface, informando ao usuário que algo deu errado.
 
-### Making a Progressive Web App
+### Tecnologias Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React**: Biblioteca JavaScript para construir a interface do usuário.
+- **Fetch API**: Utilizada para fazer a requisição à API de Rick and Morty.
+- **CSS**: Para estilização básica do site.
 
-### Advanced Configuration
+### Próximos Passos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Melhorar o design do site.
+- Adicionar paginação para navegar entre as diferentes páginas de personagens.
+- Implementar mais filtros, como por espécie ou status dos personagens.
+- Adicionar testes unitários para garantir a estabilidade do código.
 
-### Deployment
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licença
+
+Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
+
+---
+
+
